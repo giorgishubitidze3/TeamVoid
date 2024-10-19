@@ -2,58 +2,79 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_home"
-        android:title="something"
-        android:icon="@drawable/icon_close"
+        android:id="@+id/drawer_main"
+        android:title="მთავარი"
+        android:icon="@drawable/icon_home_outline"
         /><item
-        android:id="@+id/nav_homee"
-        android:title="something"
-        android:icon="@drawable/icon_close"
+        android:id="@+id/drawer_product"
+        android:title="ჩემი პროდუქტი"
+        android:icon="@drawable/icon_wallet"
         /><item
-        android:id="@+id/nav_homeee"
-        android:title="something"
-        android:icon="@drawable/icon_close"
+        android:id="@+id/drawer_investments"
+        android:title="ინვესტიციები"
+        android:icon="@drawable/icon_investments"
         /><item
-        android:id="@+id/nav_homeeee"
-        android:title="something"
-        android:icon="@drawable/icon_close"
+        android:id="@+id/drawer_transfer"
+        android:title="გადარიცხვები"
+        android:icon="@drawable/icon_transfer"
         /><item
-        android:id="@+id/nav_homeeeee"
-        android:title="something"
-        android:icon="@drawable/icon_close"
+        android:id="@+id/drawer_parking"
+        android:title="პარკირება და ჯარიმები"
+        android:icon="@drawable/icon_car"
+        /><item
+        android:id="@+id/drawer_transactions"
+        android:title="ტრანზაქციები"
+        android:icon="@drawable/icon_transactions"
+        /><item
+        android:id="@+id/drawer_finance"
+        android:title="ჩემი ფინანსები"
+        android:icon="@drawable/icon_chart"
         />
 
-    <item android:title="somethingg">
+    <item android:title="">
 
         <menu>
 
             <item
-                android:id="@+id/something"
-                android:title="Something"
-                android:icon="@drawable/icon_close"/>
+                android:id="@+id/drawer_ertguli"
+                android:title="ერთგული"
+                android:icon="@drawable/icon_ertguli"/>
 
             <item
-                android:id="@+id/somethingg"
-                android:title="Something"
-                android:icon="@drawable/icon_close"/>
+                android:id="@+id/drawer_product_activation"
+                android:title="პროდუქტების აქტივაცია"
+                android:icon="@drawable/icon_product_activation"/>
 
             <item
-                android:id="@+id/somethinggg"
-                android:title="Something"
+                android:id="@+id/drawer_posts"
+                android:title="ჩემი განცხადებები"
+                android:icon="@drawable/icon_posts"/>
+
+            <item
+                android:id="@+id/drawer_notifications"
+                android:title="შეტყობინებები"
+                android:icon="@drawable/icon_notifications"/>
+            <item
+                android:id="@+id/drawer_currency"
+                android:title="ვალუტის კურსები"
                 android:icon="@drawable/icon_close"/>
+            <item
+                android:id="@+id/drawer_atms"
+                android:title="ბანკომატები"
+                android:icon="@drawable/icon_atms"/>
 
         </menu>
 
     </item>
 
-    <item android:title="somethingg">
+    <item android:title="">
 
         <menu>
 
             <item
-                android:id="@+id/somethinga"
-                android:title="Something"
-                android:icon="@drawable/icon_close"/>
+                android:id="@+id/drawer_settings"
+                android:title="პარამეტრები"
+                android:icon="@drawable/icon_settings"/>
         </menu>
 
     </item>

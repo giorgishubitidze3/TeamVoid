@@ -2,38 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_marginTop="16dp">
 
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="50dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp">
     <ImageView
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:src="@drawable/ic_launcher_background"/>
-
+    </androidx.cardview.widget.CardView>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginHorizontal="10dp">
     <TextView
+        android:layout_marginTop="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
        android:id="@+id/user_name"
         android:paddingTop="8dp"
         android:textSize="16sp"
-        android:text="გიორგი შუბითიძე"
+        android:text="ვახტანგ ვახტანგიშვილი"
         />
 
     <TextView
         android:layout_width="wrap_content"
-        android:text="mail@mail.com"
+        android:maxWidth="200dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="vakhtang.vakhtangishvili@gmail.com"
         android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <ImageButton
-        android:layout_marginHorizontal="150dp"
-        android:layout_gravity="end"
+        android:layout_gravity="end|center"
         android:layout_width="32dp"
+        android:background="@android:color/transparent"
         android:src="@drawable/icon_close"
         android:layout_height="32dp"/>
 
