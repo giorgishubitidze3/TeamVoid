@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="მთავარი"
+        android:icon="@drawable/icon_home" />
+
+    <item
+        android:id="@+id/depositFragment"
+        android:title="შევსება"
+        android:icon="@drawable/icon_phone" />
+
+    <item
+        android:id="@+id/transferFragment"
+        android:title="გადარიცხვა"
+        android:icon="@drawable/icon_transfer" />
+
+    <item
+        android:id="@+id/utilitiesFragment"
+        android:title="კომუნალური"
+        android:icon="@drawable/icon_clipboard" />
+
+
+</menu>

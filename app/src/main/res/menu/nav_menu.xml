@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="something"
+        android:icon="@drawable/icon_close"
+        /><item
+        android:id="@+id/nav_homee"
+        android:title="something"
+        android:icon="@drawable/icon_close"
+        /><item
+        android:id="@+id/nav_homeee"
+        android:title="something"
+        android:icon="@drawable/icon_close"
+        /><item
+        android:id="@+id/nav_homeeee"
+        android:title="something"
+        android:icon="@drawable/icon_close"
+        /><item
+        android:id="@+id/nav_homeeeee"
+        android:title="something"
+        android:icon="@drawable/icon_close"
+        />
+
+    <item android:title="somethingg">
+
+        <menu>
+
+            <item
+                android:id="@+id/something"
+                android:title="Something"
+                android:icon="@drawable/icon_close"/>
+
+            <item
+                android:id="@+id/somethingg"
+                android:title="Something"
+                android:icon="@drawable/icon_close"/>
+
+            <item
+                android:id="@+id/somethinggg"
+                android:title="Something"
+                android:icon="@drawable/icon_close"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="somethingg">
+
+        <menu>
+
+            <item
+                android:id="@+id/somethinga"
+                android:title="Something"
+                android:icon="@drawable/icon_close"/>
+        </menu>
+
+    </item>
+
+</menu>
