@@ -25,6 +25,7 @@
     <TextView
         android:maxWidth="230dp"
         android:ellipsize="end"
+        android:textColor="@color/white_secondary"
         android:maxLines="1"
         android:layout_marginHorizontal="8dp"
         android:id="@+id/tv_transaction_name"
@@ -40,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="გადარიცხვები"
+        android:textColor="@color/white_secondary"
         app:layout_constraintStart_toEndOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/tv_transaction_name" />
 
@@ -48,6 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-120.00 ₾"
+        android:textColor="@color/white_secondary"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintTop_toTopOf="parent" />

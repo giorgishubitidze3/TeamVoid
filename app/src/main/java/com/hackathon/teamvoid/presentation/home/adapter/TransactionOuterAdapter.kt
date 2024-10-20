@@ -10,11 +10,12 @@ import com.hackathon.teamvoid.R
 import com.hackathon.teamvoid.domain.model.Card
 import com.hackathon.teamvoid.domain.model.Transaction
 import com.hackathon.teamvoid.domain.model.TransactionGroup
+import com.hackathon.teamvoid.presentation.home.TransactionViewModel
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-class TransactionOuterAdapter(private val groups: List<TransactionGroup>): RecyclerView.Adapter<TransactionOuterAdapter.ViewHolder>() {
+class TransactionOuterAdapter(private val groups: List<TransactionGroup>,private val viewModel: TransactionViewModel): RecyclerView.Adapter<TransactionOuterAdapter.ViewHolder>() {
 
 
 
@@ -27,7 +28,7 @@ class TransactionOuterAdapter(private val groups: List<TransactionGroup>): Recyc
             transactionDate.text = group.date
 
             // Set up the inner RecyclerView
-            childRv.adapter = TransactionInnerAdapter(group.transactions)
+            childRv.adapter = TransactionInnerAdapter(group.transactions,viewModel)
             childRv.layoutManager = LinearLayoutManager(itemView.context)
         }
 

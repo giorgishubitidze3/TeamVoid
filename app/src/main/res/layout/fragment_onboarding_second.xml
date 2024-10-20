@@ -33,7 +33,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:id="@+id/btn_back_onboarding_first"
+                android:id="@+id/btn_back_onboarding_secon"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_margin="10dp"
@@ -54,7 +54,7 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-                app:layout_constraintStart_toEndOf="@+id/btn_back_onboarding_first"
+                app:layout_constraintStart_toEndOf="@+id/btn_back_onboarding_secon"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -86,11 +86,6 @@
             android:layout_weight="1"
             android:background="@drawable/shape_tube_blue" /> <!-- Add margin to the right -->
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/shape_tube_white" />
     </LinearLayout>
 
 
@@ -142,17 +137,19 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_onboarding_second"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
         tools:itemCount="4"
         tools:listitem="@layout/rv_item_subscription_analyzed"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continue_second"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_continue_second"
         style="@style/SkyBlueButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="50dp"

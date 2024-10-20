@@ -47,7 +47,7 @@ class HomeFragment : Fragment() {
         outerRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         transactionViewModel.groupedTransactions.observe(requireActivity(), { transactionGroups ->
-            outerRecyclerView.adapter = TransactionOuterAdapter(transactionGroups)
+            outerRecyclerView.adapter = TransactionOuterAdapter(transactionGroups, transactionViewModel)
         })
 
 
@@ -63,7 +63,19 @@ class HomeFragment : Fragment() {
             openDrawer()
         }
 
-        //navView.setNavigationItemSelectedListener for navigation
+        navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.drawer_manage -> {
+                    if(transactionViewModel.onboardingState.value == true){
+                        navController.navigate(R.id.action_homeFragment_to_subscriptionsHubFragment)
+                    }else{
+                        navController.navigate(R.id.action_homeFragment_to_subscriptionManagerFragment)
+                    }
+                    true
+                }
+                else -> false
+            }
+        }
 
         val cardRecyclerView = view.findViewById<RecyclerView>(R.id.rv_cards)
 
@@ -73,7 +85,12 @@ class HomeFragment : Fragment() {
 
 
         view.findViewById<CardView>(R.id.card_sub_manager).setOnClickListener {
-            navController.navigate(R.id.action_homeFragment_to_subscriptionManagerFragment)
+            if(transactionViewModel.onboardingState.value == true){
+                navController.navigate(R.id.action_homeFragment_to_subscriptionsHubFragment)
+            }else{
+                navController.navigate(R.id.action_homeFragment_to_subscriptionManagerFragment)
+            }
+
         }
     }
 

@@ -9,7 +9,14 @@
         android:id="@+id/drawer_product"
         android:title="ჩემი პროდუქტი"
         android:icon="@drawable/icon_wallet"
-        /><item
+        />
+    <item
+        android:id="@+id/drawer_manage"
+        android:title="საბსქრიფშენები"
+        android:icon="@drawable/icon_manager"
+        >
+    </item>
+    <item
         android:id="@+id/drawer_investments"
         android:title="ინვესტიციები"
         android:icon="@drawable/icon_investments"

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_subscriptionManagerFragment"
             app:destination="@id/subscriptionManagerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_subscriptionsHubFragment"
+            app:destination="@id/subscriptionsHubFragment" />
     </fragment>
     <fragment
         android:id="@+id/depositFragment"
@@ -63,5 +66,32 @@
         <action
             android:id="@+id/action_onboardingSecondFragment_to_onboardingFirstFragment"
             app:destination="@id/onboardingFirstFragment" />
+        <action
+            android:id="@+id/action_onboardingSecondFragment_to_subscriptionsHubFragment"
+            app:destination="@id/subscriptionsHubFragment"
+            app:popUpTo="@id/subscriptionsHubFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_onboardingSecondFragment_to_onboardingFirstFragment2"
+            app:destination="@id/onboardingFirstFragment"
+            app:popUpTo="@id/onboardingFirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/subscriptionsHubFragment"
+        android:name="com.hackathon.teamvoid.presentation.subscription_manager.SubscriptionsHubFragment"
+        android:label="fragment_subscriptions_hub"
+        tools:layout="@layout/fragment_subscriptions_hub" >
+        <action
+            android:id="@+id/action_subscriptionsHubFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_subscriptionsHubFragment_to_subscriptionDetailFragment"
+            app:destination="@id/subscriptionDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscriptionDetailFragment"
+        android:name="com.hackathon.teamvoid.presentation.subscription_manager.detail.SubscriptionDetailFragment"
+        android:label="fragment_subscription_detail"
+        tools:layout="@layout/fragment_subscription_detail" />
 </navigation>

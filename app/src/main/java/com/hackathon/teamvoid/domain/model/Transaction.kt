@@ -4,5 +4,6 @@ data class Transaction(
     val name : String,
     val type : String,
     val date : Long,
-    val amount: String
+    val amount: String,
+    val company: String
 )
